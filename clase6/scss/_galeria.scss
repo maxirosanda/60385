@@ -1,0 +1,34 @@
+/* Galeria */
+.galeria{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,150px);
+    grid-template-areas: "img1 img2 img2 img4"
+                         "img1 img2 img2 img4"
+                         "img1 img3 img3 img4"
+                         "img5 img5 img6 img6"
+                         "img5 img5 img6 img6"
+                         "img7 img7 img7 img7";
+
+    @media (max-width: 992px){
+        width: 100%;
+        padding: 5px;
+    }
+
+    img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    @for $i from 1 to 8 {
+        img:nth-child(#{$i}){
+            grid-area: img + $i;
+        }
+    }
+
+}

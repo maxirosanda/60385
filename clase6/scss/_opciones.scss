@@ -1,0 +1,19 @@
+/* Opciones */
+.opciones{
+    margin: 30px 0px;
+}
+
+.opciones-opcion{
+    background-color: $color-primario;
+    padding: 40px;
+    color: $color-contraste;
+    text-align: center;
+    border-radius: $radio-bordes;
+    margin: 10px 0px;
+}
+
+.opciones-opcion-boton{
+    @extend %boton;
+    background-color: $color-secundario;
+    color: $color-contraste;
+}

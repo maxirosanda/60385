@@ -1,0 +1,47 @@
+/* Tarjetas */
+
+.tarjetas{
+    gap:25px;
+    margin-bottom: 20px;
+    @media(max-width: 992px){
+        margin-bottom: 30px;
+    }
+}
+.tarjeta{
+    width: 300px;
+    background-color: coral;
+    margin: 10px;
+    padding: 25px;
+    gap: 20px;
+    position: relative;
+
+}
+
+.tarjeta-titulo{
+    font-weight: normal;
+}
+.tarjeta-titulo--desatada{
+    font-weight: bold;
+}
+.tarjeta-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+.tarjeta-boton{
+    @extend %boton;
+    background-color: $color-secundario;
+    color: $color-contraste;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    transition: 0.5s;
+    &:hover{
+        background-color: $color-terciario;
+        width: 150px;
+        
+    }
+}

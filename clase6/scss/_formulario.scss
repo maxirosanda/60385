@@ -1,0 +1,59 @@
+/* Fomularion Contactos*/
+
+.form-contactos{
+    font-size: 20px;
+    background-color: $color-secundario;
+    width: 550px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    border-radius: $radio-bordes;
+
+}
+
+.form-contactos-grupo{
+    height: 80px;
+    gap: 15px;
+    margin: 15px 0px;
+}
+
+.form-contactos-grupo-mensaje{
+    gap: 10px;
+    height: 100px;
+    margin: 10px 0px;
+}
+
+
+.form-contactos-grupo-label{
+    color: $color-contraste;
+}
+
+.form-contactos-grupo-input {
+    width: 100%;
+    background-color: transparent;
+    color: $color-contraste;
+    border: 1px solid $color-contraste;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.form-contactos-grupo-input::placeholder{
+    color: $color-contraste;
+}
+
+.form-contactos-grupo-input:focus{
+    border: 2px solid $color-contraste;
+    outline: none;
+}
+
+.form-contactos-boton{
+    font-size: 20px;
+    width: 100%;
+    color: $color-secundario;
+    font-weight: bold;
+    background-color: $color-contraste;
+    border: 0px;
+    border-radius: $radio-bordes;
+    padding: 10px 5px;
+}
